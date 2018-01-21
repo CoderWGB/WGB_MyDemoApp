@@ -26,7 +26,7 @@
 		tableView.delegate = self;
 		tableView.dataSource = self;
 		tableView.rowHeight = 44;
-		tableView.separatorColor = [UIColor colorWithRed: arc4random()%256/255.0 green:arc4random()%256/255.0 blue:arc4random()%256/255.0 alpha:1.0];
+		tableView.separatorColor = [UIColor blackColor];
 		tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
 		[self.view addSubview: tableView];
 		tableView;

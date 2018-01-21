@@ -35,6 +35,7 @@
 		_textView.textColor = [UIColor redColor];
 		_textView.backgroundColor = [UIColor cyanColor];
 		_textView.text = @"查询结果...";
+		_textView.layoutManager.allowsNonContiguousLayout = NO;
 		[self.view addSubview: _textView];
 	}
 	return _textView;
@@ -80,7 +81,7 @@
 				{
 			NSLog(@"创建表成功");
 			[self.logMessage appendFormat:@"\n大吉大利,创建表成功或者打开成功!\t\n"];
-			 self.textView.text = self.logMessage;
+			[self displayLogMessage];
 			}
 		}
 }
@@ -114,7 +115,7 @@
 	[self.db executeUpdate:@"INSERT INTO t_student (name,age,sex) VALUES (?,?,?);",name,@(age),sex];
 	NSLog(@"成功插入一条新数据:\t %@-%@-%@",name,@(age),sex);
 	[self.logMessage appendFormat:@"\n成功插入一条新数据!\t %@-%@-%@ \t\n",name,@(age),sex];
-	self.textView.text = self.logMessage;
+	[self displayLogMessage];
 
 		//2.executeUpdateWithForamat：不确定的参数用%@，%d等来占位 （参数为原始数据类型，执行语句不区分大小写）
 //	[self.db executeUpdateWithFormat:@"insert into t_student (name,age,sex) values (%@,%i,%@);",name,age,sex];
@@ -141,7 +142,7 @@
 		NSInteger age = [ageArray[arc4random() % ageArray.count] integerValue];
 		[self.db executeUpdate: @"delete from t_student where age = ?;",@(age)];
 		[self.logMessage appendFormat:@"\n成功删除年龄为%@岁的数据!\t  \t\n",@(age)];
-		self.textView.text = self.logMessage;
+	[self displayLogMessage];
 
 		//2.不确定的参数用%@，%d等来占位  二狗这个太难听了 凡是含有二狗的全部刷掉  于是模糊查询 delete 这些
 //	[self.db executeUpdateWithFormat:@"delete from t_student where name like '%二狗%';"];
@@ -166,7 +167,7 @@
 	}
 	[self.db executeUpdate:@"update t_student set age = ? where age = ?",@(18),@(0)];
 	[self.logMessage appendFormat:@"\n成功将年龄为0岁的数据修改成了18岁!\t  \t\n"];
-	self.textView.text = self.logMessage;
+	[self displayLogMessage];
 }
 
 #pragma mark- 查询数据
@@ -188,7 +189,7 @@
 		NSString *log = [NSString stringWithFormat:@"%@\t\t%@\t\t%@\t\t%@",@(idNum),name,@(age),sex];
 		[self.logMessage appendFormat:@"\n\t%@\t\n",log];
 		}
-	self.textView.text = self.logMessage;
+	[self displayLogMessage];
 }
 
 ///清空日志
@@ -196,6 +197,12 @@
 	self.textView.text = nil;
 	self.logMessage = nil;
 	[self.logMessage appendString: @"数据库已准备就绪..."];
+}
+
+/// 显示滚到最后一行
+- (void)displayLogMessage{
+	self.textView.text = self.logMessage;
+	[self.textView scrollRangeToVisible:NSMakeRange(self.textView.text.length, 1)];
 }
 
 - (void)buttonClick:(UIButton *)button{
