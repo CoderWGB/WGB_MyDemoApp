@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CAC1CB7620144B2200838009 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CAC1CB7520144B2200838009 /* libsqlite3.0.tbd */; };
+		CAECE4002013972500CFB625 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CAECE3FF2013972500CFB625 /* AppDelegate.m */; };
+		CAECE4032013972500CFB625 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAECE4022013972500CFB625 /* DemoViewController.m */; };
+		CAECE4062013972500CFB625 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAECE4042013972500CFB625 /* Main.storyboard */; };
+		CAECE4082013972500CFB625 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAECE4072013972500CFB625 /* Assets.xcassets */; };
+		CAECE40B2013972500CFB625 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAECE4092013972500CFB625 /* LaunchScreen.storyboard */; };
+		CAECE40E2013972500CFB625 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CAECE40D2013972500CFB625 /* main.m */; };
+		CAECE41A201397CF00CFB625 /* WGBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAECE419201397CF00CFB625 /* WGBBaseViewController.m */; };
+		CAECE41D201397E300CFB625 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CAECE41C201397E300CFB625 /* BaseModel.m */; };
+		CAECE4282013996F00CFB625 /* WGBDataBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAECE4272013996F00CFB625 /* WGBDataBaseViewController.m */; };
+		CAECE42B2013999300CFB625 /* DemoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CAECE42A2013999300CFB625 /* DemoModel.m */; };
+		CAECE42E2013A0E800CFB625 /* WGBCustomNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAECE42D2013A0E800CFB625 /* WGBCustomNavigationViewController.m */; };
+		CAECE4312013A22B00CFB625 /* WGBTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAECE4302013A22B00CFB625 /* WGBTabBarViewController.m */; };
+		CAECE4342013A51400CFB625 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CAECE4332013A51400CFB625 /* UIImage+Extension.m */; };
+		CAECE4402013AE8400CFB625 /* BlogListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAECE43F2013AE8400CFB625 /* BlogListViewController.m */; };
+		CAECE44D2013B39400CFB625 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CAECE4432013B39400CFB625 /* FMDatabaseQueue.m */; };
+		CAECE44E2013B39400CFB625 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CAECE4462013B39400CFB625 /* FMDatabaseAdditions.m */; };
+		CAECE44F2013B39400CFB625 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = CAECE4472013B39400CFB625 /* FMDatabase.m */; };
+		CAECE4502013B39400CFB625 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = CAECE44B2013B39400CFB625 /* FMDatabasePool.m */; };
+		CAECE4512013B39400CFB625 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CAECE44C2013B39400CFB625 /* FMResultSet.m */; };
+		CAECE4542013B44700CFB625 /* StudentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CAECE4532013B44700CFB625 /* StudentModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CAC1CB7520144B2200838009 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		CAECE3FB2013972500CFB625 /* WGB_MyDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WGB_MyDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAECE3FE2013972500CFB625 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CAECE3FF2013972500CFB625 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CAECE4012013972500CFB625 /* DemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
+		CAECE4022013972500CFB625 /* DemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
+		CAECE4052013972500CFB625 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CAECE4072013972500CFB625 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CAECE40A2013972500CFB625 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CAECE40C2013972500CFB625 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAECE40D2013972500CFB625 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CAECE418201397CF00CFB625 /* WGBBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBBaseViewController.h; sourceTree = "<group>"; };
+		CAECE419201397CF00CFB625 /* WGBBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBBaseViewController.m; sourceTree = "<group>"; };
+		CAECE41B201397E300CFB625 /* BaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		CAECE41C201397E300CFB625 /* BaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		CAECE41E2013987000CFB625 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		CAECE4262013996F00CFB625 /* WGBDataBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBDataBaseViewController.h; sourceTree = "<group>"; };
+		CAECE4272013996F00CFB625 /* WGBDataBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBDataBaseViewController.m; sourceTree = "<group>"; };
+		CAECE4292013999300CFB625 /* DemoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoModel.h; sourceTree = "<group>"; };
+		CAECE42A2013999300CFB625 /* DemoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoModel.m; sourceTree = "<group>"; };
+		CAECE42C2013A0E800CFB625 /* WGBCustomNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBCustomNavigationViewController.h; sourceTree = "<group>"; };
+		CAECE42D2013A0E800CFB625 /* WGBCustomNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBCustomNavigationViewController.m; sourceTree = "<group>"; };
+		CAECE42F2013A22B00CFB625 /* WGBTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBTabBarViewController.h; sourceTree = "<group>"; };
+		CAECE4302013A22B00CFB625 /* WGBTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBTabBarViewController.m; sourceTree = "<group>"; };
+		CAECE4322013A51400CFB625 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		CAECE4332013A51400CFB625 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		CAECE43E2013AE8400CFB625 /* BlogListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlogListViewController.h; sourceTree = "<group>"; };
+		CAECE43F2013AE8400CFB625 /* BlogListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlogListViewController.m; sourceTree = "<group>"; };
+		CAECE4422013B39400CFB625 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		CAECE4432013B39400CFB625 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		CAECE4442013B39400CFB625 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		CAECE4452013B39400CFB625 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		CAECE4462013B39400CFB625 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		CAECE4472013B39400CFB625 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		CAECE4482013B39400CFB625 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		CAECE4492013B39400CFB625 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		CAECE44A2013B39400CFB625 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		CAECE44B2013B39400CFB625 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		CAECE44C2013B39400CFB625 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		CAECE4522013B44700CFB625 /* StudentModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StudentModel.h; sourceTree = "<group>"; };
+		CAECE4532013B44700CFB625 /* StudentModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StudentModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CAECE3F82013972500CFB625 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAC1CB7620144B2200838009 /* libsqlite3.0.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CAC1CB7420144B2200838009 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CAC1CB7520144B2200838009 /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CAECE3F22013972500CFB625 = {
+			isa = PBXGroup;
+			children = (
+				CAECE3FD2013972500CFB625 /* WGB_MyDemoApp */,
+				CAECE3FC2013972500CFB625 /* Products */,
+				CAC1CB7420144B2200838009 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CAECE3FC2013972500CFB625 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAECE3FB2013972500CFB625 /* WGB_MyDemoApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CAECE3FD2013972500CFB625 /* WGB_MyDemoApp */ = {
+			isa = PBXGroup;
+			children = (
+				CAECE4222013993500CFB625 /* Category */,
+				CAECE4212013992E00CFB625 /* Lib */,
+				CAECE41F2013991700CFB625 /* Demo */,
+				CAECE4142013978E00CFB625 /* Base */,
+				CAECE43A2013AE1700CFB625 /* Home */,
+				CAECE4362013ADEF00CFB625 /* Blog */,
+				CAECE3FE2013972500CFB625 /* AppDelegate.h */,
+				CAECE3FF2013972500CFB625 /* AppDelegate.m */,
+				CAECE4042013972500CFB625 /* Main.storyboard */,
+				CAECE4072013972500CFB625 /* Assets.xcassets */,
+				CAECE4092013972500CFB625 /* LaunchScreen.storyboard */,
+				CAECE40C2013972500CFB625 /* Info.plist */,
+				CAECE40D2013972500CFB625 /* main.m */,
+				CAECE41E2013987000CFB625 /* PrefixHeader.pch */,
+			);
+			path = WGB_MyDemoApp;
+			sourceTree = "<group>";
+		};
+		CAECE4142013978E00CFB625 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				CAECE4152013979B00CFB625 /* Model */,
+				CAECE416201397A400CFB625 /* View */,
+				CAECE417201397AA00CFB625 /* Controller */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		CAECE4152013979B00CFB625 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CAECE41B201397E300CFB625 /* BaseModel.h */,
+				CAECE41C201397E300CFB625 /* BaseModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CAECE416201397A400CFB625 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CAECE417201397AA00CFB625 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CAECE418201397CF00CFB625 /* WGBBaseViewController.h */,
+				CAECE419201397CF00CFB625 /* WGBBaseViewController.m */,
+				CAECE42C2013A0E800CFB625 /* WGBCustomNavigationViewController.h */,
+				CAECE42D2013A0E800CFB625 /* WGBCustomNavigationViewController.m */,
+				CAECE42F2013A22B00CFB625 /* WGBTabBarViewController.h */,
+				CAECE4302013A22B00CFB625 /* WGBTabBarViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CAECE41F2013991700CFB625 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				CAECE4202013992100CFB625 /* Database */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		CAECE4202013992100CFB625 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				CAECE4252013994800CFB625 /* Controller */,
+				CAECE4242013994200CFB625 /* View */,
+				CAECE4232013993D00CFB625 /* Model */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		CAECE4212013992E00CFB625 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				CAECE4412013B39400CFB625 /* fmdb */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		CAECE4222013993500CFB625 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				CAECE4322013A51400CFB625 /* UIImage+Extension.h */,
+				CAECE4332013A51400CFB625 /* UIImage+Extension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		CAECE4232013993D00CFB625 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CAECE4522013B44700CFB625 /* StudentModel.h */,
+				CAECE4532013B44700CFB625 /* StudentModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CAECE4242013994200CFB625 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CAECE4252013994800CFB625 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CAECE4262013996F00CFB625 /* WGBDataBaseViewController.h */,
+				CAECE4272013996F00CFB625 /* WGBDataBaseViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CAECE4362013ADEF00CFB625 /* Blog */ = {
+			isa = PBXGroup;
+			children = (
+				CAECE4372013ADEF00CFB625 /* Controller */,
+				CAECE4382013ADEF00CFB625 /* Model */,
+				CAECE4392013ADEF00CFB625 /* View */,
+			);
+			path = Blog;
+			sourceTree = "<group>";
+		};
+		CAECE4372013ADEF00CFB625 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CAECE43E2013AE8400CFB625 /* BlogListViewController.h */,
+				CAECE43F2013AE8400CFB625 /* BlogListViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CAECE4382013ADEF00CFB625 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CAECE4392013ADEF00CFB625 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CAECE43A2013AE1700CFB625 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CAECE43B2013AE1700CFB625 /* Controller */,
+				CAECE43C2013AE1700CFB625 /* Model */,
+				CAECE43D2013AE1700CFB625 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CAECE43B2013AE1700CFB625 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CAECE4012013972500CFB625 /* DemoViewController.h */,
+				CAECE4022013972500CFB625 /* DemoViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CAECE43C2013AE1700CFB625 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CAECE4292013999300CFB625 /* DemoModel.h */,
+				CAECE42A2013999300CFB625 /* DemoModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CAECE43D2013AE1700CFB625 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CAECE4412013B39400CFB625 /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				CAECE4422013B39400CFB625 /* FMDatabase.h */,
+				CAECE4432013B39400CFB625 /* FMDatabaseQueue.m */,
+				CAECE4442013B39400CFB625 /* FMResultSet.h */,
+				CAECE4452013B39400CFB625 /* FMDatabasePool.h */,
+				CAECE4462013B39400CFB625 /* FMDatabaseAdditions.m */,
+				CAECE4472013B39400CFB625 /* FMDatabase.m */,
+				CAECE4482013B39400CFB625 /* FMDatabaseQueue.h */,
+				CAECE4492013B39400CFB625 /* FMDB.h */,
+				CAECE44A2013B39400CFB625 /* FMDatabaseAdditions.h */,
+				CAECE44B2013B39400CFB625 /* FMDatabasePool.m */,
+				CAECE44C2013B39400CFB625 /* FMResultSet.m */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CAECE3FA2013972500CFB625 /* WGB_MyDemoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAECE4112013972500CFB625 /* Build configuration list for PBXNativeTarget "WGB_MyDemoApp" */;
+			buildPhases = (
+				CAECE3F72013972500CFB625 /* Sources */,
+				CAECE3F82013972500CFB625 /* Frameworks */,
+				CAECE3F92013972500CFB625 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WGB_MyDemoApp;
+			productName = WGB_MyDemoApp;
+			productReference = CAECE3FB2013972500CFB625 /* WGB_MyDemoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CAECE3F32013972500CFB625 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "王贵彬";
+				TargetAttributes = {
+					CAECE3FA2013972500CFB625 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CAECE3F62013972500CFB625 /* Build configuration list for PBXProject "WGB_MyDemoApp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CAECE3F22013972500CFB625;
+			productRefGroup = CAECE3FC2013972500CFB625 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CAECE3FA2013972500CFB625 /* WGB_MyDemoApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CAECE3F92013972500CFB625 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAECE40B2013972500CFB625 /* LaunchScreen.storyboard in Resources */,
+				CAECE4082013972500CFB625 /* Assets.xcassets in Resources */,
+				CAECE4062013972500CFB625 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CAECE3F72013972500CFB625 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAECE42E2013A0E800CFB625 /* WGBCustomNavigationViewController.m in Sources */,
+				CAECE41A201397CF00CFB625 /* WGBBaseViewController.m in Sources */,
+				CAECE4312013A22B00CFB625 /* WGBTabBarViewController.m in Sources */,
+				CAECE44F2013B39400CFB625 /* FMDatabase.m in Sources */,
+				CAECE42B2013999300CFB625 /* DemoModel.m in Sources */,
+				CAECE4032013972500CFB625 /* DemoViewController.m in Sources */,
+				CAECE4512013B39400CFB625 /* FMResultSet.m in Sources */,
+				CAECE44D2013B39400CFB625 /* FMDatabaseQueue.m in Sources */,
+				CAECE4502013B39400CFB625 /* FMDatabasePool.m in Sources */,
+				CAECE4342013A51400CFB625 /* UIImage+Extension.m in Sources */,
+				CAECE40E2013972500CFB625 /* main.m in Sources */,
+				CAECE44E2013B39400CFB625 /* FMDatabaseAdditions.m in Sources */,
+				CAECE41D201397E300CFB625 /* BaseModel.m in Sources */,
+				CAECE4402013AE8400CFB625 /* BlogListViewController.m in Sources */,
+				CAECE4282013996F00CFB625 /* WGBDataBaseViewController.m in Sources */,
+				CAECE4002013972500CFB625 /* AppDelegate.m in Sources */,
+				CAECE4542013B44700CFB625 /* StudentModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CAECE4042013972500CFB625 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAECE4052013972500CFB625 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CAECE4092013972500CFB625 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAECE40A2013972500CFB625 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CAECE40F2013972500CFB625 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CAECE4102013972500CFB625 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CAECE4122013972500CFB625 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E27WNKVHV9;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = $SRCROOT/WGB_MyDemoApp/PrefixHeader.pch;
+				INFOPLIST_FILE = WGB_MyDemoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ChangeWorld.WGB.WGB-MyDemoApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CAECE4132013972500CFB625 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E27WNKVHV9;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = $SRCROOT/WGB_MyDemoApp/PrefixHeader.pch;
+				INFOPLIST_FILE = WGB_MyDemoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ChangeWorld.WGB.WGB-MyDemoApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CAECE3F62013972500CFB625 /* Build configuration list for PBXProject "WGB_MyDemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAECE40F2013972500CFB625 /* Debug */,
+				CAECE4102013972500CFB625 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAECE4112013972500CFB625 /* Build configuration list for PBXNativeTarget "WGB_MyDemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAECE4122013972500CFB625 /* Debug */,
+				CAECE4132013972500CFB625 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CAECE3F32013972500CFB625 /* Project object */;
+}
