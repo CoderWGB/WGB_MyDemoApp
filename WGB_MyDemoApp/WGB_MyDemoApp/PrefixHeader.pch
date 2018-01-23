@@ -11,13 +11,22 @@
 
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#define  kWidth  [UIScreen mainScreen].bounds.size.width
+#define  kHeight [UIScreen mainScreen].bounds.size.height
+
+#define kAlertMessage(msg) \
+UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"温馨提示" message: msg delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];\
+[alert show];
+
+
 #import "FMDB.h"
 #import "WGBBaseViewController.h"
 #import "BaseModel.h"
 #import "UIImage+Extension.h"
+#import "UIView+WGBExtra.h"
+#import "NSObject+WGBCreate.h"
 
-#define  kWidth  [UIScreen mainScreen].bounds.size.width
-#define  kHeight [UIScreen mainScreen].bounds.size.height
 
 
 #endif /* PrefixHeader_pch */

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA76608020160E6A004039B2 /* BreakpointResumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA76607F20160E6A004039B2 /* BreakpointResumeViewController.m */; };
+		CA76608320160F66004039B2 /* UIView+WGBExtra.m in Sources */ = {isa = PBXBuildFile; fileRef = CA76608220160F66004039B2 /* UIView+WGBExtra.m */; };
+		CA766086201619E0004039B2 /* WGBDownLoadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CA766085201619E0004039B2 /* WGBDownLoadManager.m */; };
+		CA7660DF20177F80004039B2 /* QRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7660DE20177F80004039B2 /* QRCodeViewController.m */; };
+		CA7660E22017814C004039B2 /* NSObject+WGBCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7660E12017814C004039B2 /* NSObject+WGBCreate.m */; };
 		CAC1CB7620144B2200838009 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CAC1CB7520144B2200838009 /* libsqlite3.0.tbd */; };
 		CAECE4002013972500CFB625 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CAECE3FF2013972500CFB625 /* AppDelegate.m */; };
 		CAECE4032013972500CFB625 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAECE4022013972500CFB625 /* DemoViewController.m */; };
@@ -31,6 +36,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA76607E20160E6A004039B2 /* BreakpointResumeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BreakpointResumeViewController.h; sourceTree = "<group>"; };
+		CA76607F20160E6A004039B2 /* BreakpointResumeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BreakpointResumeViewController.m; sourceTree = "<group>"; };
+		CA76608120160F66004039B2 /* UIView+WGBExtra.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+WGBExtra.h"; sourceTree = "<group>"; };
+		CA76608220160F66004039B2 /* UIView+WGBExtra.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+WGBExtra.m"; sourceTree = "<group>"; };
+		CA766084201619E0004039B2 /* WGBDownLoadManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBDownLoadManager.h; sourceTree = "<group>"; };
+		CA766085201619E0004039B2 /* WGBDownLoadManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBDownLoadManager.m; sourceTree = "<group>"; };
+		CA7660DD20177F80004039B2 /* QRCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRCodeViewController.h; sourceTree = "<group>"; };
+		CA7660DE20177F80004039B2 /* QRCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCodeViewController.m; sourceTree = "<group>"; };
+		CA7660E02017814C004039B2 /* NSObject+WGBCreate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+WGBCreate.h"; sourceTree = "<group>"; };
+		CA7660E12017814C004039B2 /* NSObject+WGBCreate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+WGBCreate.m"; sourceTree = "<group>"; };
 		CAC1CB7520144B2200838009 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		CAECE3FB2013972500CFB625 /* WGB_MyDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WGB_MyDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAECE3FE2013972500CFB625 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -86,6 +101,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA76607A20160E4B004039B2 /* BreakpointResume */ = {
+			isa = PBXGroup;
+			children = (
+				CA76607B20160E4B004039B2 /* Controller */,
+				CA76607C20160E4B004039B2 /* Model */,
+				CA76607D20160E4B004039B2 /* View */,
+			);
+			path = BreakpointResume;
+			sourceTree = "<group>";
+		};
+		CA76607B20160E4B004039B2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CA76607E20160E6A004039B2 /* BreakpointResumeViewController.h */,
+				CA76607F20160E6A004039B2 /* BreakpointResumeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CA76607C20160E4B004039B2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CA766084201619E0004039B2 /* WGBDownLoadManager.h */,
+				CA766085201619E0004039B2 /* WGBDownLoadManager.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CA76607D20160E4B004039B2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CA7660D920177F41004039B2 /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				CA7660DB20177F5A004039B2 /* Model */,
+				CA7660DA20177F51004039B2 /* View */,
+				CA7660DC20177F5F004039B2 /* Controller */,
+			);
+			path = QRCode;
+			sourceTree = "<group>";
+		};
+		CA7660DA20177F51004039B2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CA7660DB20177F5A004039B2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CA7660DC20177F5F004039B2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CA7660DD20177F80004039B2 /* QRCodeViewController.h */,
+				CA7660DE20177F80004039B2 /* QRCodeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		CAC1CB7420144B2200838009 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +257,8 @@
 		CAECE41F2013991700CFB625 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				CA7660D920177F41004039B2 /* QRCode */,
+				CA76607A20160E4B004039B2 /* BreakpointResume */,
 				CAECE4202013992100CFB625 /* Database */,
 			);
 			path = Demo;
@@ -202,6 +287,10 @@
 			children = (
 				CAECE4322013A51400CFB625 /* UIImage+Extension.h */,
 				CAECE4332013A51400CFB625 /* UIImage+Extension.m */,
+				CA76608120160F66004039B2 /* UIView+WGBExtra.h */,
+				CA76608220160F66004039B2 /* UIView+WGBExtra.m */,
+				CA7660E02017814C004039B2 /* NSObject+WGBCreate.h */,
+				CA7660E12017814C004039B2 /* NSObject+WGBCreate.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -394,17 +483,22 @@
 				CAECE44F2013B39400CFB625 /* FMDatabase.m in Sources */,
 				CAECE42B2013999300CFB625 /* DemoModel.m in Sources */,
 				CAECE4032013972500CFB625 /* DemoViewController.m in Sources */,
+				CA766086201619E0004039B2 /* WGBDownLoadManager.m in Sources */,
 				CAECE4512013B39400CFB625 /* FMResultSet.m in Sources */,
 				CAECE44D2013B39400CFB625 /* FMDatabaseQueue.m in Sources */,
+				CA76608320160F66004039B2 /* UIView+WGBExtra.m in Sources */,
+				CA7660E22017814C004039B2 /* NSObject+WGBCreate.m in Sources */,
 				CAECE4502013B39400CFB625 /* FMDatabasePool.m in Sources */,
 				CAECE4342013A51400CFB625 /* UIImage+Extension.m in Sources */,
 				CAECE40E2013972500CFB625 /* main.m in Sources */,
 				CAECE44E2013B39400CFB625 /* FMDatabaseAdditions.m in Sources */,
 				CAECE41D201397E300CFB625 /* BaseModel.m in Sources */,
 				CAECE4402013AE8400CFB625 /* BlogListViewController.m in Sources */,
+				CA76608020160E6A004039B2 /* BreakpointResumeViewController.m in Sources */,
 				CAECE4282013996F00CFB625 /* WGBDataBaseViewController.m in Sources */,
 				CAECE4002013972500CFB625 /* AppDelegate.m in Sources */,
 				CAECE4542013B44700CFB625 /* StudentModel.m in Sources */,
+				CA7660DF20177F80004039B2 /* QRCodeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

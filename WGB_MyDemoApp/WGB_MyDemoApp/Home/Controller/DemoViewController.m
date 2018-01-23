@@ -9,6 +9,8 @@
 #import "DemoViewController.h"
 #import "DemoModel.h"
 #import "WGBDataBaseViewController.h"
+#import "BreakpointResumeViewController.h"
+#import "QRCodeViewController.h"
 
 @interface DemoViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (strong,nonatomic) NSMutableArray *dataSource;
@@ -26,7 +28,7 @@
 		tableView.delegate = self;
 		tableView.dataSource = self;
 		tableView.rowHeight = 44;
-		tableView.separatorColor = [UIColor blackColor];
+		tableView.separatorColor = [UIColor blueColor];
 		tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
 		[self.view addSubview: tableView];
 		tableView;
@@ -50,6 +52,8 @@
 	NSArray *firstRowArray =
 		@[
 				[DemoModel createWithDemoTitle:@"数据库的相关操作"  description: @"FMDB,sqite3,MySQL..." demoVC: [WGBDataBaseViewController new]],
+				[DemoModel createWithDemoTitle:@"断点续传Demo"  description: @"http,断点续传,文件下载..." demoVC: [BreakpointResumeViewController new]],
+				[DemoModel createWithDemoTitle:@"二维码Demo"  description: @"扫码,生成二维码..." demoVC: [QRCodeViewController new]]
 		];
 
 	[self.dataSource addObject: firstRowArray];
