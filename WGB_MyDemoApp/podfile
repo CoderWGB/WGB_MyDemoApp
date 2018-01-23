@@ -1,0 +1,7 @@
+platform :ios,'8.0'
+
+target "WGB_MyDemoApp" do
+
+pod "WGBCustomAlertPopupView",:path => "https://github.com/CoderWGB/WGBCustomAlertView/blob/master/WGBCustomAlertView" 
+
+end
