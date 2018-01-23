@@ -1,0 +1,12 @@
+PODS:
+  - WGBCustomAlertPopupView (0.0.1)
+
+DEPENDENCIES:
+  - WGBCustomAlertPopupView (= 0.0.1)
+
+SPEC CHECKSUMS:
+  WGBCustomAlertPopupView: b0ef5d1e9d05068fcb9c81e3443d605753ead972
+
+PODFILE CHECKSUM: a7353d55e6e57a7a604e78311f735b2ea7a07b9d
+
+COCOAPODS: 1.4.0

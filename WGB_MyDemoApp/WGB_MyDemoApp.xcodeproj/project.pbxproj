@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19D02C74A1DC14A3ACB6A42D /* libPods-WGB_MyDemoApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20E8FF59F2C1DA9C7110442B /* libPods-WGB_MyDemoApp.a */; };
 		CA76608020160E6A004039B2 /* BreakpointResumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA76607F20160E6A004039B2 /* BreakpointResumeViewController.m */; };
 		CA76608320160F66004039B2 /* UIView+WGBExtra.m in Sources */ = {isa = PBXBuildFile; fileRef = CA76608220160F66004039B2 /* UIView+WGBExtra.m */; };
 		CA766086201619E0004039B2 /* WGBDownLoadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CA766085201619E0004039B2 /* WGBDownLoadManager.m */; };
@@ -36,6 +37,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20E8FF59F2C1DA9C7110442B /* libPods-WGB_MyDemoApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WGB_MyDemoApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85D9C27E9DB2D93F78126DE6 /* Pods-WGB_MyDemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WGB_MyDemoApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-WGB_MyDemoApp/Pods-WGB_MyDemoApp.release.xcconfig"; sourceTree = "<group>"; };
+		9582246B4CAE293E0F5D32D1 /* Pods-WGB_MyDemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WGB_MyDemoApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WGB_MyDemoApp/Pods-WGB_MyDemoApp.debug.xcconfig"; sourceTree = "<group>"; };
 		CA76607E20160E6A004039B2 /* BreakpointResumeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BreakpointResumeViewController.h; sourceTree = "<group>"; };
 		CA76607F20160E6A004039B2 /* BreakpointResumeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BreakpointResumeViewController.m; sourceTree = "<group>"; };
 		CA76608120160F66004039B2 /* UIView+WGBExtra.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+WGBExtra.h"; sourceTree = "<group>"; };
@@ -95,6 +99,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAC1CB7620144B2200838009 /* libsqlite3.0.tbd in Frameworks */,
+				19D02C74A1DC14A3ACB6A42D /* libPods-WGB_MyDemoApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				CAC1CB7520144B2200838009 /* libsqlite3.0.tbd */,
+				20E8FF59F2C1DA9C7110442B /* libPods-WGB_MyDemoApp.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -183,6 +189,7 @@
 				CAECE3FD2013972500CFB625 /* WGB_MyDemoApp */,
 				CAECE3FC2013972500CFB625 /* Products */,
 				CAC1CB7420144B2200838009 /* Frameworks */,
+				CF7B99030FEF8ECDD05C8550 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -406,6 +413,15 @@
 			path = fmdb;
 			sourceTree = "<group>";
 		};
+		CF7B99030FEF8ECDD05C8550 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9582246B4CAE293E0F5D32D1 /* Pods-WGB_MyDemoApp.debug.xcconfig */,
+				85D9C27E9DB2D93F78126DE6 /* Pods-WGB_MyDemoApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -413,9 +429,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CAECE4112013972500CFB625 /* Build configuration list for PBXNativeTarget "WGB_MyDemoApp" */;
 			buildPhases = (
+				C6BFDA53F47D76C0C438702C /* [CP] Check Pods Manifest.lock */,
 				CAECE3F72013972500CFB625 /* Sources */,
 				CAECE3F82013972500CFB625 /* Frameworks */,
 				CAECE3F92013972500CFB625 /* Resources */,
+				1F3BA03B4D557BE80E832A6D /* [CP] Embed Pods Frameworks */,
+				130E193B51148B74C291F97F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -471,6 +490,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		130E193B51148B74C291F97F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WGB_MyDemoApp/Pods-WGB_MyDemoApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1F3BA03B4D557BE80E832A6D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WGB_MyDemoApp/Pods-WGB_MyDemoApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6BFDA53F47D76C0C438702C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WGB_MyDemoApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CAECE3F72013972500CFB625 /* Sources */ = {
@@ -630,12 +700,13 @@
 		};
 		CAECE4122013972500CFB625 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9582246B4CAE293E0F5D32D1 /* Pods-WGB_MyDemoApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E27WNKVHV9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = $SRCROOT/WGB_MyDemoApp/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$SRCROOT/WGB_MyDemoApp/PrefixHeader.pch";
 				INFOPLIST_FILE = WGB_MyDemoApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -647,12 +718,13 @@
 		};
 		CAECE4132013972500CFB625 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85D9C27E9DB2D93F78126DE6 /* Pods-WGB_MyDemoApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E27WNKVHV9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = $SRCROOT/WGB_MyDemoApp/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$SRCROOT/WGB_MyDemoApp/PrefixHeader.pch";
 				INFOPLIST_FILE = WGB_MyDemoApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
