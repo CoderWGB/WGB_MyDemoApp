@@ -26,6 +26,7 @@ UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"温馨提示" message:
 #import "UIImage+Extension.h"
 #import "UIView+WGBExtra.h"
 #import "NSObject+WGBCreate.h"
+#import "UIViewController+WGBExtension.h"
 
 
 

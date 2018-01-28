@@ -14,6 +14,8 @@
 		CA7660DF20177F80004039B2 /* QRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7660DE20177F80004039B2 /* QRCodeViewController.m */; };
 		CA7660E22017814C004039B2 /* NSObject+WGBCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7660E12017814C004039B2 /* NSObject+WGBCreate.m */; };
 		CAC1CB7620144B2200838009 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CAC1CB7520144B2200838009 /* libsqlite3.0.tbd */; };
+		CAEACB52201E06E700766DFA /* WGBGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAEACB51201E06E700766DFA /* WGBGuideViewController.m */; };
+		CAEACB55201E0BFF00766DFA /* UIViewController+WGBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = CAEACB54201E0BFF00766DFA /* UIViewController+WGBExtension.m */; };
 		CAECE4002013972500CFB625 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CAECE3FF2013972500CFB625 /* AppDelegate.m */; };
 		CAECE4032013972500CFB625 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAECE4022013972500CFB625 /* DemoViewController.m */; };
 		CAECE4062013972500CFB625 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAECE4042013972500CFB625 /* Main.storyboard */; };
@@ -51,6 +53,10 @@
 		CA7660E02017814C004039B2 /* NSObject+WGBCreate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+WGBCreate.h"; sourceTree = "<group>"; };
 		CA7660E12017814C004039B2 /* NSObject+WGBCreate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+WGBCreate.m"; sourceTree = "<group>"; };
 		CAC1CB7520144B2200838009 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		CAEACB50201E06E700766DFA /* WGBGuideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBGuideViewController.h; sourceTree = "<group>"; };
+		CAEACB51201E06E700766DFA /* WGBGuideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBGuideViewController.m; sourceTree = "<group>"; };
+		CAEACB53201E0BFF00766DFA /* UIViewController+WGBExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+WGBExtension.h"; sourceTree = "<group>"; };
+		CAEACB54201E0BFF00766DFA /* UIViewController+WGBExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+WGBExtension.m"; sourceTree = "<group>"; };
 		CAECE3FB2013972500CFB625 /* WGB_MyDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WGB_MyDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAECE3FE2013972500CFB625 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CAECE3FF2013972500CFB625 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -183,6 +189,39 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CAEACB4C201E06B400766DFA /* Guide */ = {
+			isa = PBXGroup;
+			children = (
+				CAEACB4E201E06C400766DFA /* Model */,
+				CAEACB4D201E06BF00766DFA /* View */,
+				CAEACB4F201E06CA00766DFA /* Controller */,
+			);
+			path = Guide;
+			sourceTree = "<group>";
+		};
+		CAEACB4D201E06BF00766DFA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CAEACB4E201E06C400766DFA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CAEACB4F201E06CA00766DFA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CAEACB50201E06E700766DFA /* WGBGuideViewController.h */,
+				CAEACB51201E06E700766DFA /* WGBGuideViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		CAECE3F22013972500CFB625 = {
 			isa = PBXGroup;
 			children = (
@@ -264,6 +303,7 @@
 		CAECE41F2013991700CFB625 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				CAEACB4C201E06B400766DFA /* Guide */,
 				CA7660D920177F41004039B2 /* QRCode */,
 				CA76607A20160E4B004039B2 /* BreakpointResume */,
 				CAECE4202013992100CFB625 /* Database */,
@@ -298,6 +338,8 @@
 				CA76608220160F66004039B2 /* UIView+WGBExtra.m */,
 				CA7660E02017814C004039B2 /* NSObject+WGBCreate.h */,
 				CA7660E12017814C004039B2 /* NSObject+WGBCreate.m */,
+				CAEACB53201E0BFF00766DFA /* UIViewController+WGBExtension.h */,
+				CAEACB54201E0BFF00766DFA /* UIViewController+WGBExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -556,6 +598,7 @@
 				CA766086201619E0004039B2 /* WGBDownLoadManager.m in Sources */,
 				CAECE4512013B39400CFB625 /* FMResultSet.m in Sources */,
 				CAECE44D2013B39400CFB625 /* FMDatabaseQueue.m in Sources */,
+				CAEACB52201E06E700766DFA /* WGBGuideViewController.m in Sources */,
 				CA76608320160F66004039B2 /* UIView+WGBExtra.m in Sources */,
 				CA7660E22017814C004039B2 /* NSObject+WGBCreate.m in Sources */,
 				CAECE4502013B39400CFB625 /* FMDatabasePool.m in Sources */,
@@ -569,6 +612,7 @@
 				CAECE4002013972500CFB625 /* AppDelegate.m in Sources */,
 				CAECE4542013B44700CFB625 /* StudentModel.m in Sources */,
 				CA7660DF20177F80004039B2 /* QRCodeViewController.m in Sources */,
+				CAEACB55201E0BFF00766DFA /* UIViewController+WGBExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -706,7 +750,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E27WNKVHV9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$SRCROOT/WGB_MyDemoApp/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = $SRCROOT/WGB_MyDemoApp/PrefixHeader.pch;
 				INFOPLIST_FILE = WGB_MyDemoApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -724,7 +768,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E27WNKVHV9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$SRCROOT/WGB_MyDemoApp/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = $SRCROOT/WGB_MyDemoApp/PrefixHeader.pch;
 				INFOPLIST_FILE = WGB_MyDemoApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

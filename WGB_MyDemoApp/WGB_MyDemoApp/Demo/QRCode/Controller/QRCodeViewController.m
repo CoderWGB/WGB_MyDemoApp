@@ -47,10 +47,12 @@
 #pragma mark- 打开扫一扫
 - (void)scanQRCodeAction{
 
+	
 }
 
 #pragma mark- 生成二维码
 - (void)createQRCodeAction{
+
 
 }
 

@@ -45,7 +45,11 @@
 			// 表示用户在根控制器界面，就不需要触发滑动手势，
 		return NO;
 	}
-	return YES;
+	/// 个性化设置 个别VC禁用右滑返回的手势
+	if (self.currentViewController.rightSwipePopGestureEnable == YES) {
+		return NO;
+	}
+		return YES;
 }
 
 
