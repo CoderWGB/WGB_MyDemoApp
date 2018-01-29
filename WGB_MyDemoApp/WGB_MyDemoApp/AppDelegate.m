@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "WGBTabBarViewController.h"
+#import "WGBDebugTouchView.h"
 
 @interface AppDelegate ()
 
@@ -21,6 +22,7 @@
 	self.window.backgroundColor = [UIColor whiteColor];
 	self.window.rootViewController = [[WGBTabBarViewController alloc] init];
 	[self.window  makeKeyAndVisible];
+	
 	return YES;
 }
 

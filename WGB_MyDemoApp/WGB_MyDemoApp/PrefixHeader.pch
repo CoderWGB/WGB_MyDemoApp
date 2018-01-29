@@ -27,7 +27,8 @@ UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"温馨提示" message:
 #import "UIView+WGBExtra.h"
 #import "NSObject+WGBCreate.h"
 #import "UIViewController+WGBExtension.h"
-
-
+#import "WGBSingleton.h"
+#import "LCActionSheet.h"
+#import "Masonry.h"
 
 #endif /* PrefixHeader_pch */
