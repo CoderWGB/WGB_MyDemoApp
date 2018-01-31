@@ -8,8 +8,9 @@
 
 #import "WGBGuideViewController.h"
 #import "WGBDebugTouchView.h"
+#import "MHPhotoManager.h"
 
-@interface WGBGuideViewController ()
+@interface WGBGuideViewController ()<IDMPhotoBrowserDelegate>
 
 @end
 
@@ -17,6 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -29,5 +31,15 @@
 	[[WGBDebugTouchView sharedInstance] setHide:YES];
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+	[MHPhotoManager showPhotoBrowser:self photos:
+	 @[
+		 [IDMPhoto photoWithImage:[UIImage imageNamed:@"s1"]],
+		 [IDMPhoto photoWithImage:[UIImage imageNamed:@"s2"]],
+		 [IDMPhoto photoWithImage:[UIImage imageNamed:@"s3"]],
+		 [IDMPhoto photoWithImage:[UIImage imageNamed:@"s4"]],
+		 [IDMPhoto photoWithImage:[UIImage imageNamed:@"s5"]],
+		 ] initialPageIndex:0 delegate:self];
+}
 
 @end

@@ -84,14 +84,22 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "${PODS_ROOT}/IDMPhotoBrowser/Classes/IDMPhotoBrowser.bundle"
+  install_resource "${PODS_ROOT}/IDMPhotoBrowser/Classes/IDMPBLocalizations.bundle"
+  install_resource "${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle"
   install_resource "${PODS_ROOT}/LBXScan/LBXScan/UI/CodeScan.bundle"
+  install_resource "${PODS_ROOT}/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle"
   install_resource "${PODS_ROOT}/ZBarSDK/iphone/res/zbar-back.png"
   install_resource "${PODS_ROOT}/ZBarSDK/iphone/res/zbar-help.html"
   install_resource "${PODS_ROOT}/ZBarSDK/iphone/res/zbar-helpicons.png"
   install_resource "${PODS_ROOT}/ZBarSDK/iphone/res/zbar-samples.png"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "${PODS_ROOT}/IDMPhotoBrowser/Classes/IDMPhotoBrowser.bundle"
+  install_resource "${PODS_ROOT}/IDMPhotoBrowser/Classes/IDMPBLocalizations.bundle"
+  install_resource "${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle"
   install_resource "${PODS_ROOT}/LBXScan/LBXScan/UI/CodeScan.bundle"
+  install_resource "${PODS_ROOT}/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle"
   install_resource "${PODS_ROOT}/ZBarSDK/iphone/res/zbar-back.png"
   install_resource "${PODS_ROOT}/ZBarSDK/iphone/res/zbar-help.html"
   install_resource "${PODS_ROOT}/ZBarSDK/iphone/res/zbar-helpicons.png"

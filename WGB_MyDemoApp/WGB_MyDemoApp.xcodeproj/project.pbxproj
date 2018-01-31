@@ -13,6 +13,7 @@
 		CA766086201619E0004039B2 /* WGBDownLoadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CA766085201619E0004039B2 /* WGBDownLoadManager.m */; };
 		CA7660DF20177F80004039B2 /* QRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7660DE20177F80004039B2 /* QRCodeViewController.m */; };
 		CA7660E22017814C004039B2 /* NSObject+WGBCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7660E12017814C004039B2 /* NSObject+WGBCreate.m */; };
+		CAA14DC62021F27700AF88D3 /* MHPhotoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA14DC42021F27700AF88D3 /* MHPhotoManager.m */; };
 		CAC1CB7620144B2200838009 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CAC1CB7520144B2200838009 /* libsqlite3.0.tbd */; };
 		CAEACB52201E06E700766DFA /* WGBGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAEACB51201E06E700766DFA /* WGBGuideViewController.m */; };
 		CAEACB55201E0BFF00766DFA /* UIViewController+WGBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = CAEACB54201E0BFF00766DFA /* UIViewController+WGBExtension.m */; };
@@ -70,6 +71,8 @@
 		CA7660DE20177F80004039B2 /* QRCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCodeViewController.m; sourceTree = "<group>"; };
 		CA7660E02017814C004039B2 /* NSObject+WGBCreate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+WGBCreate.h"; sourceTree = "<group>"; };
 		CA7660E12017814C004039B2 /* NSObject+WGBCreate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+WGBCreate.m"; sourceTree = "<group>"; };
+		CAA14DC42021F27700AF88D3 /* MHPhotoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHPhotoManager.m; sourceTree = "<group>"; };
+		CAA14DC52021F27700AF88D3 /* MHPhotoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHPhotoManager.h; sourceTree = "<group>"; };
 		CAC1CB7520144B2200838009 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		CAEACB50201E06E700766DFA /* WGBGuideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBGuideViewController.h; sourceTree = "<group>"; };
 		CAEACB51201E06E700766DFA /* WGBGuideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBGuideViewController.m; sourceTree = "<group>"; };
@@ -286,6 +289,8 @@
 		CAEACB56201E1E0300766DFA /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				CAA14DC52021F27700AF88D3 /* MHPhotoManager.h */,
+				CAA14DC42021F27700AF88D3 /* MHPhotoManager.m */,
 				CAEACB57201E1E2400766DFA /* WGBSingleton.h */,
 			);
 			path = Helper;
@@ -675,7 +680,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-WGB_MyDemoApp/Pods-WGB_MyDemoApp-resources.sh",
+				"${PODS_ROOT}/IDMPhotoBrowser/Classes/IDMPhotoBrowser.bundle",
+				"${PODS_ROOT}/IDMPhotoBrowser/Classes/IDMPBLocalizations.bundle",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
 				"${PODS_ROOT}/LBXScan/LBXScan/UI/CodeScan.bundle",
+				"${PODS_ROOT}/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle",
 				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-back.png",
 				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-help.html",
 				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-helpicons.png",
@@ -683,7 +692,11 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IDMPhotoBrowser.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IDMPBLocalizations.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CodeScan.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TZImagePickerController.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zbar-back.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zbar-help.html",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zbar-helpicons.png",
@@ -746,6 +759,7 @@
 				CAECE44F2013B39400CFB625 /* FMDatabase.m in Sources */,
 				CAECE42B2013999300CFB625 /* DemoModel.m in Sources */,
 				CAEACB8D201E25F800766DFA /* MASConstraintMaker.m in Sources */,
+				CAA14DC62021F27700AF88D3 /* MHPhotoManager.m in Sources */,
 				CAECE4032013972500CFB625 /* DemoViewController.m in Sources */,
 				CA766086201619E0004039B2 /* WGBDownLoadManager.m in Sources */,
 				CAECE4512013B39400CFB625 /* FMResultSet.m in Sources */,

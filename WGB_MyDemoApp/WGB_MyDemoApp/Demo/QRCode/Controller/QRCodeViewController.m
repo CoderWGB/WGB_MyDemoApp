@@ -7,6 +7,7 @@
 //
 
 #import "QRCodeViewController.h"
+#import <LBXScanViewStyle.h>
 
 @interface QRCodeViewController ()
 
@@ -46,8 +47,22 @@
 
 #pragma mark- 打开扫一扫
 - (void)scanQRCodeAction{
+	LBXScanViewStyle *style = [[LBXScanViewStyle alloc]init];
+	style.centerUpOffset = 44;
+	style.photoframeAngleStyle = LBXScanViewPhotoframeAngleStyle_Outer;
+	style.photoframeLineW = 6;
+	style.photoframeAngleW = 24;
+	style.photoframeAngleH = 24;
+	style.anmiationStyle = LBXScanViewAnimationStyle_LineMove;
 
-	
+		//qq里面的线条图片
+//	UIImage *imgLine = [UIImage imageNamed:@"CodeScan.bundle/qrcode_scan_light_green"];
+//	style.animationImage = imgLine;
+
+	LBXScanViewController *vc = [LBXScanViewController new];
+//	vc.style = style;
+//	vc.isQQSimulator = YES;
+	[self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark- 生成二维码

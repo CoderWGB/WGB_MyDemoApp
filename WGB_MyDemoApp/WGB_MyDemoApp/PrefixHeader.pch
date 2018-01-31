@@ -20,6 +20,32 @@ UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"温馨提示" message:
 [alert show];
 
 
+#define iOS7Later ([UIDevice currentDevice].systemVersion.floatValue >= 7.0f)
+#define iOS8Later ([UIDevice currentDevice].systemVersion.floatValue >= 8.0f)
+#define iOS9Later ([UIDevice currentDevice].systemVersion.floatValue >= 9.0f)
+#define iOS9_1Later ([UIDevice currentDevice].systemVersion.floatValue >= 9.1f)
+
+	/// 手机类型相关
+#define MH_IS_IPHONE_4_OR_LESS  (MH_IS_IPHONE && MH_SCREEN_MAX_LENGTH  < 568.0)
+#define MH_IS_IPHONE_5          (MH_IS_IPHONE && MH_SCREEN_MAX_LENGTH == 568.0)
+#define MH_IS_IPHONE_6          (MH_IS_IPHONE && MH_SCREEN_MAX_LENGTH == 667.0)
+#define MH_IS_IPHONE_6P         (MH_IS_IPHONE && MH_SCREEN_MAX_LENGTH == 736.0)
+#define MH_IS_IPHONE_X          (MH_IS_IPHONE && MH_SCREEN_MAX_LENGTH == 812.0)
+
+	/// 类型相关
+#define MH_IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#define MH_IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define MH_IS_RETINA ([[UIScreen mainScreen] scale] >= 2.0)
+
+	/// 屏幕尺寸相关
+#define MH_SCREEN_WIDTH  ([[UIScreen mainScreen] bounds].size.width)
+#define MH_SCREEN_HEIGHT ([[UIScreen mainScreen] bounds].size.height)
+#define MH_SCREEN_BOUNDS ([[UIScreen mainScreen] bounds])
+#define MH_SCREEN_MAX_LENGTH (MAX(MH_SCREEN_WIDTH, MH_SCREEN_HEIGHT))
+#define MH_SCREEN_MIN_LENGTH (MIN(MH_SCREEN_WIDTH, MH_SCREEN_HEIGHT))
+
+
+
 #import "FMDB.h"
 #import "WGBBaseViewController.h"
 #import "BaseModel.h"
@@ -30,5 +56,14 @@ UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"温馨提示" message:
 #import "WGBSingleton.h"
 #import "LCActionSheet.h"
 #import "Masonry.h"
+#import <POP.h>
+#import <TZImagePickerController.h>
+#import <IDMPhotoBrowser.h>
+#import <IQKeyboardManager.h>
+#import <BlocksKit.h>
+#import <BlocksKit+UIKit.h>
+#import <LBXScanViewController.h>
+#import <LBXScanTypes.h>
+
 
 #endif /* PrefixHeader_pch */
