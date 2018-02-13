@@ -12,6 +12,8 @@
 	/// init
 WGBSingletonH(Instance);
 
+@property (copy,nonatomic) void (^clickActionBlcok) (NSString *title,NSInteger index) ;
+
 	/// 设置显示or隐藏
 - (void)setHide:(BOOL)hide;
 - (BOOL)isHide;

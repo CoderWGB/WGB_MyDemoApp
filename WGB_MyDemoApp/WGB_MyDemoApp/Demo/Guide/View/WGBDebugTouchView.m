@@ -96,6 +96,7 @@ WGBSingletonM(Instance)
 		if (buttonIndex == 0) {
 			return ;
 		}
+		!self.clickActionBlcok?:self.clickActionBlcok(@[@"打开首页",@"看美女",@"看文章"][buttonIndex-1],buttonIndex);
 		NSLog(@"%ld-%@",buttonIndex,@[@"打开首页",@"看美女",@"看文章"][buttonIndex-1]);
 	} otherButtonTitleArray:@[@"打开首页",@"看美女",@"看文章"]];
 

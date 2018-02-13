@@ -18,7 +18,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+	[[WGBDebugTouchView sharedInstance]  setClickActionBlcok:^(NSString *title, NSInteger index) {
+		if ([title isEqualToString:@"看美女"]) {
+			[MHPhotoManager showPhotoBrowser:self photos:
+			 @[
+				 [IDMPhoto photoWithImage:[UIImage imageNamed:@"s1"]],
+				 [IDMPhoto photoWithImage:[UIImage imageNamed:@"s2"]],
+				 [IDMPhoto photoWithImage:[UIImage imageNamed:@"s3"]],
+				 [IDMPhoto photoWithImage:[UIImage imageNamed:@"s4"]],
+				 [IDMPhoto photoWithImage:[UIImage imageNamed:@"s5"]],
+				 ] initialPageIndex:0 delegate:self];
+		}else 	if ([title isEqualToString:@"打开首页"]) {
+			[self.navigationController popToRootViewControllerAnimated:YES];
+		}else 	if ([title isEqualToString:@"看文章"]) {\
+			self.tabBarController.selectedIndex = 1;
+			[self.navigationController popToRootViewControllerAnimated:YES];
+		}
+	}];
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -31,15 +47,5 @@
 	[[WGBDebugTouchView sharedInstance] setHide:YES];
 }
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-	[MHPhotoManager showPhotoBrowser:self photos:
-	 @[
-		 [IDMPhoto photoWithImage:[UIImage imageNamed:@"s1"]],
-		 [IDMPhoto photoWithImage:[UIImage imageNamed:@"s2"]],
-		 [IDMPhoto photoWithImage:[UIImage imageNamed:@"s3"]],
-		 [IDMPhoto photoWithImage:[UIImage imageNamed:@"s4"]],
-		 [IDMPhoto photoWithImage:[UIImage imageNamed:@"s5"]],
-		 ] initialPageIndex:0 delegate:self];
-}
 
 @end

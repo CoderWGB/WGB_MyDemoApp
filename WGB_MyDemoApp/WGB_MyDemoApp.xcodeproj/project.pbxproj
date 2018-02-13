@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		19D02C74A1DC14A3ACB6A42D /* libPods-WGB_MyDemoApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20E8FF59F2C1DA9C7110442B /* libPods-WGB_MyDemoApp.a */; };
+		CA1A21E4203305ED00A71791 /* DownPullBigImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1A21E3203305ED00A71791 /* DownPullBigImageViewController.m */; };
+		CA1A21E72033061B00A71791 /* WGBBigImageHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1A21E62033061B00A71791 /* WGBBigImageHeader.m */; };
 		CA76608020160E6A004039B2 /* BreakpointResumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA76607F20160E6A004039B2 /* BreakpointResumeViewController.m */; };
 		CA76608320160F66004039B2 /* UIView+WGBExtra.m in Sources */ = {isa = PBXBuildFile; fileRef = CA76608220160F66004039B2 /* UIView+WGBExtra.m */; };
 		CA766086201619E0004039B2 /* WGBDownLoadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CA766085201619E0004039B2 /* WGBDownLoadManager.m */; };
@@ -61,6 +63,10 @@
 		20E8FF59F2C1DA9C7110442B /* libPods-WGB_MyDemoApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WGB_MyDemoApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85D9C27E9DB2D93F78126DE6 /* Pods-WGB_MyDemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WGB_MyDemoApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-WGB_MyDemoApp/Pods-WGB_MyDemoApp.release.xcconfig"; sourceTree = "<group>"; };
 		9582246B4CAE293E0F5D32D1 /* Pods-WGB_MyDemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WGB_MyDemoApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WGB_MyDemoApp/Pods-WGB_MyDemoApp.debug.xcconfig"; sourceTree = "<group>"; };
+		CA1A21E2203305ED00A71791 /* DownPullBigImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownPullBigImageViewController.h; sourceTree = "<group>"; };
+		CA1A21E3203305ED00A71791 /* DownPullBigImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownPullBigImageViewController.m; sourceTree = "<group>"; };
+		CA1A21E52033061B00A71791 /* WGBBigImageHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBBigImageHeader.h; sourceTree = "<group>"; };
+		CA1A21E62033061B00A71791 /* WGBBigImageHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBBigImageHeader.m; sourceTree = "<group>"; };
 		CA76607E20160E6A004039B2 /* BreakpointResumeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BreakpointResumeViewController.h; sourceTree = "<group>"; };
 		CA76607F20160E6A004039B2 /* BreakpointResumeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BreakpointResumeViewController.m; sourceTree = "<group>"; };
 		CA76608120160F66004039B2 /* UIView+WGBExtra.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+WGBExtra.h"; sourceTree = "<group>"; };
@@ -174,6 +180,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA1A21DE203305CC00A71791 /* DownPullBigImage */ = {
+			isa = PBXGroup;
+			children = (
+				CA1A21DF203305CC00A71791 /* Controller */,
+				CA1A21E0203305CC00A71791 /* Model */,
+				CA1A21E1203305CC00A71791 /* View */,
+			);
+			path = DownPullBigImage;
+			sourceTree = "<group>";
+		};
+		CA1A21DF203305CC00A71791 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CA1A21E2203305ED00A71791 /* DownPullBigImageViewController.h */,
+				CA1A21E3203305ED00A71791 /* DownPullBigImageViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CA1A21E0203305CC00A71791 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CA1A21E1203305CC00A71791 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CA1A21E52033061B00A71791 /* WGBBigImageHeader.h */,
+				CA1A21E62033061B00A71791 /* WGBBigImageHeader.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		CA76607A20160E4B004039B2 /* BreakpointResume */ = {
 			isa = PBXGroup;
 			children = (
@@ -438,6 +479,7 @@
 		CAECE41F2013991700CFB625 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				CA1A21DE203305CC00A71791 /* DownPullBigImage */,
 				CAEACB4C201E06B400766DFA /* Guide */,
 				CA7660D920177F41004039B2 /* QRCode */,
 				CA76607A20160E4B004039B2 /* BreakpointResume */,
@@ -747,6 +789,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA1A21E4203305ED00A71791 /* DownPullBigImageViewController.m in Sources */,
 				CAEACB92201E25F800766DFA /* MASViewConstraint.m in Sources */,
 				CAEACB91201E25F800766DFA /* MASConstraint.m in Sources */,
 				CAEACB69201E207300766DFA /* UIImage+LCActionSheet.m in Sources */,
@@ -785,6 +828,7 @@
 				CAECE4002013972500CFB625 /* AppDelegate.m in Sources */,
 				CAEACB6B201E207300766DFA /* LCActionSheet.m in Sources */,
 				CAEACB8F201E25F800766DFA /* NSArray+MASAdditions.m in Sources */,
+				CA1A21E72033061B00A71791 /* WGBBigImageHeader.m in Sources */,
 				CAECE4542013B44700CFB625 /* StudentModel.m in Sources */,
 				CA7660DF20177F80004039B2 /* QRCodeViewController.m in Sources */,
 				CAEACB55201E0BFF00766DFA /* UIViewController+WGBExtension.m in Sources */,
@@ -925,7 +969,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E27WNKVHV9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$SRCROOT/WGB_MyDemoApp/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = $SRCROOT/WGB_MyDemoApp/PrefixHeader.pch;
 				INFOPLIST_FILE = WGB_MyDemoApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -943,7 +987,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E27WNKVHV9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$SRCROOT/WGB_MyDemoApp/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = $SRCROOT/WGB_MyDemoApp/PrefixHeader.pch;
 				INFOPLIST_FILE = WGB_MyDemoApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

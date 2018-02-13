@@ -12,6 +12,7 @@
 #import "BreakpointResumeViewController.h"
 #import "QRCodeViewController.h"
 #import "WGBGuideViewController.h"
+#import "DownPullBigImageViewController.h"
 
 @interface DemoViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (strong,nonatomic) NSMutableArray *dataSource;
@@ -55,8 +56,10 @@
 				[DemoModel createWithDemoTitle:@"数据库的相关操作"  description: @"FMDB,sqite3,MySQL..." demoVC: [WGBDataBaseViewController new]],
 				[DemoModel createWithDemoTitle:@"断点续传Demo"  description: @"http,断点续传,文件下载..." demoVC: [BreakpointResumeViewController new]],
 				[DemoModel createWithDemoTitle:@"二维码Demo"  description: @"扫码,生成二维码..." demoVC: [QRCodeViewController new]],
-				[DemoModel createWithDemoTitle:@"悬浮按钮Demo"  description: @"和系统的类似,方便用于全局的Debug..." demoVC: [WGBGuideViewController new]],
+				[DemoModel createWithDemoTitle:@"悬浮按钮和看美女Demo"  description: @"和系统的类似,方便用于全局的Debug..." demoVC: [WGBGuideViewController new]],
+				[DemoModel createWithDemoTitle:@"下拉放大看美女Demo"  description: @"scrollView的监听..." demoVC: [DownPullBigImageViewController new]],
 		];
+
 
 	[self.dataSource addObject: firstRowArray];
 	[self.demoTableView reloadData];
