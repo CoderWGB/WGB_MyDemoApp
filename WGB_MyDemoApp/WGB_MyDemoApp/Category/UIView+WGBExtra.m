@@ -7,6 +7,7 @@
 //
 
 #import "UIView+WGBExtra.h"
+#import <objc/runtime.h>
 
 @implementation UIView (WGBExtra)
 
@@ -106,6 +107,53 @@
 	CGRect frame = self.frame;
 	frame.origin = wgb_origin;
 	self.frame = frame;
+}
+
+-(UIViewController*)wgb_currentViewController
+{
+	UIResponder *nextResponder =  self;
+	do
+		{
+		nextResponder = [nextResponder nextResponder];
+		if ([nextResponder isKindOfClass:[UIViewController class]])
+			return (UIViewController*)nextResponder;
+			} while (nextResponder != nil);
+	return nil;
+}
+
+-(UIViewController *)wgb_topMostController
+{
+	NSMutableArray *controllersHierarchy = [[NSMutableArray alloc] init];
+	UIViewController *topController = self.window.rootViewController;
+	if (topController)
+			{
+		[controllersHierarchy addObject:topController];
+			}
+	while ([topController presentedViewController]) {
+		topController = [topController presentedViewController];
+		[controllersHierarchy addObject:topController];
+	}
+	UIResponder *matchController = [self wgb_currentViewController];
+	while (matchController != nil && [controllersHierarchy containsObject:matchController] == NO)
+			{
+		do
+				{
+			matchController = [matchController nextResponder];
+
+				} while (matchController != nil && [matchController isKindOfClass:[UIViewController class]] == NO);
+			}
+	return (UIViewController*)matchController;
+}
+
+- (void)setArcDegree:(CGFloat)arcDegree{
+	objc_setAssociatedObject(self, @selector(arcDegree), @(arcDegree), OBJC_ASSOCIATION_ASSIGN);
+	self.layer.cornerRadius = self.arcDegree;
+	self.layer.masksToBounds = YES;
+}
+
+- (CGFloat)arcDegree{
+	id degree = objc_getAssociatedObject(self, _cmd);
+	return [degree floatValue];
 }
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+IB_DESIGNABLE
 
 @interface UIView (WGBExtra)
 
@@ -24,11 +25,12 @@
 @property (assign,nonatomic) CGFloat wgb_centerX;
 @property (assign,nonatomic) CGFloat wgb_centerY;
 
+///响应者接受的视图当前控制器
+@property (nullable, nonatomic, readonly, strong) UIViewController *wgb_currentViewController;
+///  视图层级最高的控制器
+@property (nullable, nonatomic, readonly, strong) UIViewController *wgb_topMostController;
 
-
-
-
-
+@property (nonatomic,assign) IBInspectable CGFloat arcDegree; //圆角弧度
 
 @end
 

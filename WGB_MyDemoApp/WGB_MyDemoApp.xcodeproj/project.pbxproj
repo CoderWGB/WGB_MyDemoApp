@@ -10,6 +10,8 @@
 		19D02C74A1DC14A3ACB6A42D /* libPods-WGB_MyDemoApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20E8FF59F2C1DA9C7110442B /* libPods-WGB_MyDemoApp.a */; };
 		CA1A21E4203305ED00A71791 /* DownPullBigImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1A21E3203305ED00A71791 /* DownPullBigImageViewController.m */; };
 		CA1A21E72033061B00A71791 /* WGBBigImageHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1A21E62033061B00A71791 /* WGBBigImageHeader.m */; };
+		CA1C557F206D2AF80035F417 /* WGBCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1C557E206D2AF80035F417 /* WGBCustomView.m */; };
+		CA1C5582206D2B110035F417 /* WGBCustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1C5581206D2B110035F417 /* WGBCustomButton.m */; };
 		CA76608020160E6A004039B2 /* BreakpointResumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA76607F20160E6A004039B2 /* BreakpointResumeViewController.m */; };
 		CA76608320160F66004039B2 /* UIView+WGBExtra.m in Sources */ = {isa = PBXBuildFile; fileRef = CA76608220160F66004039B2 /* UIView+WGBExtra.m */; };
 		CA766086201619E0004039B2 /* WGBDownLoadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CA766085201619E0004039B2 /* WGBDownLoadManager.m */; };
@@ -67,6 +69,10 @@
 		CA1A21E3203305ED00A71791 /* DownPullBigImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownPullBigImageViewController.m; sourceTree = "<group>"; };
 		CA1A21E52033061B00A71791 /* WGBBigImageHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBBigImageHeader.h; sourceTree = "<group>"; };
 		CA1A21E62033061B00A71791 /* WGBBigImageHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBBigImageHeader.m; sourceTree = "<group>"; };
+		CA1C557D206D2AF80035F417 /* WGBCustomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBCustomView.h; sourceTree = "<group>"; };
+		CA1C557E206D2AF80035F417 /* WGBCustomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBCustomView.m; sourceTree = "<group>"; };
+		CA1C5580206D2B110035F417 /* WGBCustomButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBCustomButton.h; sourceTree = "<group>"; };
+		CA1C5581206D2B110035F417 /* WGBCustomButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBCustomButton.m; sourceTree = "<group>"; };
 		CA76607E20160E6A004039B2 /* BreakpointResumeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BreakpointResumeViewController.h; sourceTree = "<group>"; };
 		CA76607F20160E6A004039B2 /* BreakpointResumeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BreakpointResumeViewController.m; sourceTree = "<group>"; };
 		CA76608120160F66004039B2 /* UIView+WGBExtra.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+WGBExtra.h"; sourceTree = "<group>"; };
@@ -459,6 +465,10 @@
 		CAECE416201397A400CFB625 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CA1C557D206D2AF80035F417 /* WGBCustomView.h */,
+				CA1C557E206D2AF80035F417 /* WGBCustomView.m */,
+				CA1C5580206D2B110035F417 /* WGBCustomButton.h */,
+				CA1C5581206D2B110035F417 /* WGBCustomButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -801,6 +811,7 @@
 				CAEACB90201E25F800766DFA /* View+MASAdditions.m in Sources */,
 				CAECE44F2013B39400CFB625 /* FMDatabase.m in Sources */,
 				CAECE42B2013999300CFB625 /* DemoModel.m in Sources */,
+				CA1C557F206D2AF80035F417 /* WGBCustomView.m in Sources */,
 				CAEACB8D201E25F800766DFA /* MASConstraintMaker.m in Sources */,
 				CAA14DC62021F27700AF88D3 /* MHPhotoManager.m in Sources */,
 				CAECE4032013972500CFB625 /* DemoViewController.m in Sources */,
@@ -827,6 +838,7 @@
 				CAECE4282013996F00CFB625 /* WGBDataBaseViewController.m in Sources */,
 				CAECE4002013972500CFB625 /* AppDelegate.m in Sources */,
 				CAEACB6B201E207300766DFA /* LCActionSheet.m in Sources */,
+				CA1C5582206D2B110035F417 /* WGBCustomButton.m in Sources */,
 				CAEACB8F201E25F800766DFA /* NSArray+MASAdditions.m in Sources */,
 				CA1A21E72033061B00A71791 /* WGBBigImageHeader.m in Sources */,
 				CAECE4542013B44700CFB625 /* StudentModel.m in Sources */,

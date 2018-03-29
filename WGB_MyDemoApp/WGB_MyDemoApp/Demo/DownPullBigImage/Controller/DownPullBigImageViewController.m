@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-	self.navigationController.navigationBar.hidden = YES ;
+//	self.navigationController.navigationBar.hidden = YES ;
 	self.automaticallyAdjustsScrollViewInsets = NO;
 	self.edgesForExtendedLayout = UIRectEdgeNone ;
 	self.tableView.tableHeaderView = [UIView new];
